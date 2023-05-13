@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Sphere
+Comment=A broser proxy application
+Exec=sphere %U
+Terminal=false
+Categories=Network;WebBrowser;
+Icon=web-browser
+NoDisplay=true
+MimeType=x-scheme-handler/http;x-scheme-handler/https;
