@@ -16,3 +16,14 @@ The following example will configure Chromium as the default browser, while open
 ```
 
 Note that the rules are tried from top to bottom, so the default browser should usually come last with a Regex that matches everything.
+
+# Installation
+
+Arch Linux users can simply install the [sphere-git](https://aur.archlinux.org/packages/sphere-git) package.
+
+To build from source, clone the repo and run:
+
+```bash
+cabal build
+cabal install
+```
