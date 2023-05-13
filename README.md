@@ -2,7 +2,7 @@
 
 Sphere is a Linux browser proxy application, that can register different handlers for `http/https` URI schemes, similar to how [Android apps can register to be the default app for just specific https URLs](https://developer.android.com/guide/topics/manifest/data-element#path) by setting `android:pathAdvancedPattern`.
 
-It works by registering sphere as the default browser, which just acts as a proxy that delegates to the correct final application via rules given in a configuration file.
+It works by registering sphere as the default browser, which acts as a proxy that delegates to the correct final application via rules given in a configuration file.
 
 The configuration file is located at `~/.config/sphere/config` and has a very simple syntax `<rule_regex> <handler>`. The file is parsed from top to bottom and the first line where `<rule_regex>` matches the given URL, will cause the corresponding `<handler>` to be executed.
 
@@ -37,3 +37,7 @@ xdg-settings set default-web-browser sphere.desktop
 ```
 
 Then configure the rules in `~/.config/sphere/config`.
+
+## Demo
+
+https://github.com/vimpostor/sphere/assets/21310755/2895bf5d-7dea-4cab-862d-5accdbbd4697
