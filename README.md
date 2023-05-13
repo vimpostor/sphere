@@ -1,6 +1,6 @@
 # Sphere
 
-Sphere is a browser proxy application, that can register different handlers for http/https URI schemes, similar to how [Android apps can register to be the default app for just specific https URLs](https://developer.android.com/guide/topics/manifest/data-element#path) with `android:pathAdvancedPattern`.
+Sphere is a Linux browser proxy application, that can register different handlers for `http/https` URI schemes, similar to how [Android apps can register to be the default app for just specific https URLs](https://developer.android.com/guide/topics/manifest/data-element#path) by setting `android:pathAdvancedPattern`.
 
 It works by registering sphere as the default browser, which just acts as a proxy that delegates to the correct final application via rules given in a configuration file.
 
@@ -27,3 +27,13 @@ To build from source, clone the repo and run:
 cabal build
 cabal install
 ```
+
+# Usage
+
+First ensure that Sphere is set as your default browser:
+
+```
+xdg-settings set default-web-browser sphere.desktop
+```
+
+Then configure the rules in `~/.config/sphere/config`.
