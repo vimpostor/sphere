@@ -2,11 +2,8 @@ cabal-version:      2.4
 name:               sphere
 version:            0.1.0.0
 
--- A short (one-line) description of the package.
 synopsis: A browser proxy
-
--- A longer description of the package.
--- description:
+description: A browser proxy application that can register different handlers for URI schemes
 
 bug-reports: https://github.com/vimpostor/sphere/issues
 
