@@ -7,6 +7,7 @@ import System.Process
 import Config
 import Match
 
+main :: IO ()
 main = do
     config <- Config.config
     args <- getArgs

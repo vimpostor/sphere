@@ -19,16 +19,20 @@ defaultConfig = Config {
 
 defaultHandler = "chromium"
 
+parseLine :: String -> SchemeRule
 parseLine l = let h = reverse $ takeWhile (' '/=) $ reverse l in
                   SchemeRule {
                       scheme = reverse $ drop (1 + length h) $ reverse l,
                       handler = h
                   }
 
+prependRule :: Config -> String -> Config
 prependRule conf l = conf{rules = parseLine l : rules conf}
 
+parse :: String -> Config
 parse config = foldl prependRule defaultConfig $ reverse $ lines config
 
+config :: IO Config
 config = do
     file <- getXdgDirectory XdgConfig "sphere/config"
     exists <- doesFileExist file
