@@ -11,6 +11,6 @@ main :: IO ()
 main = do
     config <- Config.config
     args <- getArgs
-    let uri = intercalate " " args
+    let uri = unwords args
     let handler = matchScheme (rules config) uri
     callProcess handler args
