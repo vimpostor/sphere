@@ -42,4 +42,4 @@ Then configure the rules in `~/.config/sphere/config`.
 
 https://github.com/vimpostor/sphere/assets/21310755/2895bf5d-7dea-4cab-862d-5accdbbd4697
 
-Also read my [blog post about this](https://blog.magross.net/extending-scheme-handlers/).
+Also read my [blog post about this](https://blog.grossm.com/extending-scheme-handlers/).
